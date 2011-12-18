@@ -1,0 +1,25 @@
+step1:
+    method: drawPixel
+    x: 5
+    y: 5
+    color: 16
+
+step2:
+    method: drawPixel
+    x: 10
+    y: 10
+    color: 48
+
+step3:
+    method: drawPixel
+    x: 50
+    y: 50
+    color: 4
+    
+step4:
+    method: drawText
+    x: 55
+    y: 55
+    color: 48
+    text: Hello, world!
+    
