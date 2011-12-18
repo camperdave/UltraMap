@@ -23,3 +23,9 @@ step4:
     color: 48
     text: Hello, world!
     
+step5:   
+    method: drawImage
+    x: 100
+    y: 100
+    path: testFace.png
+    
