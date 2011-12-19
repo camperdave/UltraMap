@@ -2,3 +2,16 @@ name: ultramap
 main: com.gray101.mc.ultramap.UltraMap
 version: 0.1
 
+permissions:
+    ultramap.*:
+        description: Gives access to all UltraMap features.
+        children:
+            ultramap.reload: true
+    ultramap.reload:
+        description: Allows the user to reload the map add-on files.
+        default: op
+commands:
+    ultramap:
+        description: This is the main command used.
+        permission: ultramap.reload
+        usage: /ultramap reload

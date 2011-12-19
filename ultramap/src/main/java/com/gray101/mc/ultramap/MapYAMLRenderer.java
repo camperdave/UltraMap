@@ -71,5 +71,10 @@ public class MapYAMLRenderer extends MapRenderer {
 			ds.performStep(canvas);
 		}
 	}
+	
+	@Override
+	public String toString() {
+		return "MapYAMLRenderer-" + drawSteps.toString();
+	}
 
 }
