@@ -3,7 +3,7 @@ package com.gray101.mc.ultramap.steps;
 import org.bukkit.map.MapCanvas;
 import org.bukkit.map.MinecraftFont;
 
-public class DrawText implements DrawStep {
+public class DrawText extends DrawStep {
 
 	private int x;
 	private int y;

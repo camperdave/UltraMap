@@ -8,7 +8,7 @@ import javax.imageio.ImageIO;
 
 import org.bukkit.map.MapCanvas;
 
-public class DrawImage implements DrawStep {
+public class DrawImage extends DrawStep {
 
 	private int x;
 	private int y;

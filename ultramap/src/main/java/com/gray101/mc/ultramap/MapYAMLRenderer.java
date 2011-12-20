@@ -41,13 +41,29 @@ public class MapYAMLRenderer extends MapRenderer {
 			if(method.equalsIgnoreCase("drawPixel")) {
 				int x = step.getInt("x");
 				int y = step.getInt("y");
-				byte color = (byte) step.getInt("color");
+				byte color;
+				
+				if(step.isString("color")) {
+					color = DrawStep.minecraftColorFromString(step.getString("color"));
+				}
+				else {
+					color = (byte) step.getInt("color");
+				}
+				
 				drawSteps.add(new DrawPixel(x, y, color));
 			}
 			else if(method.equalsIgnoreCase("drawText")) {
 				int x = step.getInt("x");
 				int y = step.getInt("y");
-				byte color = (byte) step.getInt("color");
+				byte color;
+				
+				if(step.isString("color")) {
+					color = DrawStep.minecraftColorFromString(step.getString("color"));
+				}
+				else {
+					color = (byte) step.getInt("color");
+				}
+				
 				String text = step.getString("text");
 				drawSteps.add(new DrawText(x, y, color, text));
 			}

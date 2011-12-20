@@ -2,7 +2,7 @@ package com.gray101.mc.ultramap.steps;
 
 import org.bukkit.map.MapCanvas;
 
-public class DrawPixel implements DrawStep {
+public class DrawPixel extends DrawStep {
 
 	private int x;
 	private int y;

@@ -2,30 +2,30 @@ step1:
     method: drawPixel
     x: 5
     y: 5
-    color: 16
+    color: gray1
 
 step2:
     method: drawPixel
     x: 10
     y: 10
-    color: 48
+    color: red
 
 step3:
     method: drawPixel
     x: 50
     y: 50
-    color: 4
+    color: blue
     
 step4:
     method: drawText
     x: 55
     y: 55
-    color: 48
+    color: darkGreen
     text: Hello, world!
     
 step5:   
     method: drawImage
     x: 100
     y: 100
-    path: testFace.png
+    path: minecartStation.png
     
